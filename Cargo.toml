@@ -3,12 +3,28 @@ name = "kreativity-ui-rs"
 version = "0.1.0"
 authors = ["Alexandru Pana <astronothing@gmail.com>"]
 
-[dependencies.nanovg]
-version = "0.3.0"
-features = ["gl3"]
+[dependencies.libc]
+version = "*"
 
-[dependencies.glfw]
-git = "https://github.com/bjz/glfw-rs"
+[dependencies.gliumvg]
+path = "gliumvg"
 
 [dependencies.gl]
 git = "https://github.com/bjz/gl-rs"
+
+[dependencies.glutin]
+version = "0.5"
+features = []
+optional = true
+
+[dependencies.glium]
+version = "*"
+features = ["glutin"]
+
+[dependencies]
+clock_ticks = "0.1.0"
+cgmath = "0.7"
+genmesh = "0.4"
+image = "0.7.0"
+obj = { version = "0.5", features = ["usegenmesh"] }
+rand = "0.3"

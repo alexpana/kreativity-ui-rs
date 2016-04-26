@@ -1,0 +1,3 @@
+[submodule "gliumvg"]
+	path = gliumvg
+	url = https://github.com/alexpana/gliumvg
